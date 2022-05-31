@@ -1,0 +1,303 @@
+<html>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id='page-title'>Javascript Refresh</h1>
+    <div id='day'>
+        <h1 id='day-title'>Day 1</h1>
+        <div id='topic-box'>
+            <h2 id=t opic-title>Basics</h2>
+            <ol id='keyTopics'>
+                <li>Variables</li>
+                <li>Operators</li>
+                <li>Data Types</li>
+                <li>Functions</li>
+                <li>Numbers/Number Methods</li>
+                <li>Strings/String methods</li>
+            </ol>
+            <div id='subTopics'>
+                <h3>Variables - Variables are containers for storing data (storing data values).</h3>
+                <ol>
+                    <li>var</li>
+                    <li>let</li>
+                    <li>const</li>
+                    <li>nothing</li>
+                </ol>
+                <p>When to Use JavaScript var? <br/> Always declare JavaScript variables with var,let, orconst. The var keyword is used in all JavaScript code from 1995 to 2015. The let and const keywords were added to JavaScript in 2015 If you want your
+                    code to run in older browser, you must use var.
+                </p>
+                <p>When to Use JavaScript const? <br/> If you want a general rule: always declare variables with const. If you think the value of the variable can change, use let.
+                </p>
+                <p>JavaScript Identifiers All JavaScript variables must be identified with unique names. These unique names are called identifiers. Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume). The general
+                    rules for constructing names for variables (unique identifiers) are: Names can contain letters, digits, underscores, and dollar signs. Names must begin with a letter Names can also begin with $ and _ (but we will not use it in this
+                    tutorial) Names are case sensitive (y and Y are different variables) Reserved words (like JavaScript keywords) cannot be used as names</p>
+
+                <p>In JavaScript, the equal sign (=) is an "assignment" operator, not an "equal to" operator.<br/> Creating a variable in JavaScript is called "declaring" a variable.<br>After the declaration, the variable has no value (technically it is
+                    undefined).
+                </p>
+            </div>
+
+            <div id='subTopics'>
+                <h3>Operators - Javascript Operators are used to do math like equations within your code.</h3>
+                <ul>
+                    JavaScript Arithmetic Operators - Arithmetic operators are used to perform arithmetic on numbers
+
+                    <li>Operator Description</li>
+                    <li>+ Addition</li>
+                    <li>- Subtraction</li>
+                    <li>* Multiplication</li>
+                    <li>** Exponentiation (ES2016)</li>
+                    <li>/ Division</li>
+                    <li>% Modulus (Division Remainder)</li>
+                    <li>++ Increment</li>
+                    <li>-- Decrement</li>
+                </ul>
+
+                <ul>
+                    JavaScript Assignment Operators Assignment operators assign values to JavaScript variables.
+
+                    <li> Same As</li>
+                    <li>Operator = Example x = y Same As x = y</li>
+                    <li>Operator + = Example x += y Same As x = x + y</li>
+                    <li>Operator - = Example x -= Same As y x = x - y</li>
+                    <li>Operator * = Example x *= y Same As x = x * y</li>
+                    <li>Operator / = Example x /= y Same As x = x / y</li>
+                    <li>Operator % = Example x %= y Same As x = x % y</li>
+                    <li>Operator ** = Example x **= y Same As x = x ** y</li>
+
+                </ul>
+                <ul>
+                    JavaScript Comparison Operators Operator Description
+                    <li>== equal to</li>
+                    <li>=== equal value and equal type</li>
+                    <li>!= not equal</li>
+                    <li>!== not equal value or not equal type</li>
+                    <li>> greater than</li>
+                    <li>'
+                        < '' less than</li>
+                            <li>>= greater than or equal to</li>
+                            <li>'
+                                <='' less than or equal to</li>
+                                    <li>? ternary operator</li>
+                </ul>
+                <ul>
+                    JavaScript Logical Operators Description
+                    <li>&& logical and</li>
+                    <li>|| logical or</li>
+                    <li>! logical not</li>
+                </ul>
+                <ul>
+                    JavaScript Type Operators Description
+                    <li>typeof Returns the type of a variable</li>
+                    <li>instanceof Returns true if an object is an instance of an object type</li>
+                </ul>
+            </div>
+
+            <div id='subTopics'>
+                <h3>The Concept of Data Types In programming - data types is an important concept. To be able to operate on variables, it is important to know something about the type. Without data types, a computer cannot safely solve this:</h3>
+                <ul>
+                    <li>JavaScript has dynamic types. This means that the same variable can be used to hold different data types:</li>
+                    <li>A string (or a text string) is a series of characters like "John Doe". Strings are written with quotes. You can use single or double quotes:</li>
+                    <li>JavaScript has only one type of numbers. Numbers can be written with, or without decimals:</li>
+                    <li>Extra large or extra small numbers can be written with scientific (exponential) notation</li>
+                    <li>JavaScript Booleans Booleans can only have two values: true or false.</li>
+                    <li>JavaScript arrays are written with square brackets. Array items are separated by commas.</li>
+                    <li>JavaScript objects are written with curly braces {}. Object properties are written as name:value pairs, separated by commas.</li>
+                    <li>You can use the JavaScript typeof operator to find the type of a JavaScript variable. The typeof operator returns the type of a variable or an expression:</li>
+                    <li>In JavaScript, a variable without a value, has the value undefined. The type is also undefined.</li>
+                </ul>
+            </div>
+
+            <div id='subTopics'>
+                <h3>Function A JavaScript function is a block of code designed to perform a particular task. A JavaScript function is executed when "something" invokes it (calls it).</h3>
+                <p>JavaScript Function Syntax A JavaScript function is defined with the function keyword, followed by a name, followed by parentheses (). Function names can contain letters, digits, underscores, and dollar signs (same rules as variables).
+                    The parentheses may include parameter names separated by commas: (parameter1, parameter2, ...) The code to be executed, by the function, is placed inside curly brackets: {}
+
+                    <br/><code>function name(parameter1, parameter2, parameter3) {
+                    // code to be executed
+                  }</code><br/> Function parameters are listed inside the parentheses () in the function definition. Function arguments are the values received by the function when it is invoked. Inside the function, the arguments (the parameters) behave
+                    as local variables.</p>
+                <ul>
+                    <li>Function Invocation --- The code inside the function will execute when "something" invokes (calls) the function: When an event occurs (when a user clicks a button) When it is invoked (called) from JavaScript code Automatically (self
+                        invoked).
+                    </li>
+                    <li>Function Return --- When JavaScript reaches a return statement, the function will stop executing. If the function was invoked from a statement, JavaScript will "return" to execute the code after the invoking statement. Functions often
+                        compute a return value. The return value is "returned" back to the "caller":</li>
+                    <li>Why Functions? You can reuse code: Define the code once, and use it many times. You can use the same code many times with different arguments, to produce different results.</li>
+                    <li>Using the example above, toCelsius refers to the function object, and toCelsius() refers to the function result. Accessing a function without () will return the function object instead of the function result.</li>
+                    <li>Functions Used as Variable Values Functions can be used the same way as you use variables, in all types of formulas, assignments, and calculations.</li>
+                    <li>Local Variables Variables declared within a JavaScript function, become LOCAL to the function. Local variables can only be accessed from within the function.</li>
+                    <li>Since local variables are only recognized inside their functions, variables with the same name can be used in different functions. Local variables are created when a function starts, and deleted when the function is completed.</li>
+                </ul>
+            </div>
+
+            <div id='subTopics'>
+                <h3>Number Methods and Properties Primitive values (like 3.14 or 2014), cannot have properties and methods (because they are not objects). But with JavaScript, methods and properties are also available to primitive values, because JavaScript
+                    treats primitive values as objects when executing methods and properties. </h3>
+
+                <ul>
+                    <li>The toString() method returns a number as a string. All number methods can be used on any type of numbers (literals, variables, or expressions):</li>
+                    <li>The toExponential() Method toExponential() returns a string, with a number rounded and written using exponential notation. A parameter defines the number of characters behind the decimal point</li>
+                    <li>The toFixed() Method toFixed() returns a string, with the number written with a specified number of decimals</li>
+                    <li>toPrecision() returns a string, with a number written with a specified length</li>
+                    <li>The valueOf() Method valueOf() returns a number as a number.</li>
+                    <li>Converting Variables to Numbers There are 3 JavaScript methods that can be used to convert variables to numbers:
+                        <ul>
+                            <li>The Number() method - Returns a number, converted from its argument.</li>
+                            <li>The parseInt() method - Parses its argument and returns a floating point number</li>
+                            <li>The parseFloat() method - Parses its argument and returns an integer</li>
+                            These methods are not number methods, but global JavaScript methods.</ul>
+
+                </ul>
+                <ul>
+                    Property Description MAX_VALUE Returns the largest number possible in JavaScript MIN_VALUE Returns the smallest number possible in JavaScript POSITIVE_INFINITY Represents infinity (returned on overflow) NEGATIVE_INFINITY Represents negative infinity (returned
+                    on overflow) NaN Represents a "Not-a-Number" value
+                    <li>MAX_VALUE returns the largest possible number in JavaScript.</li>
+                    <li>MIN_VALUE returns the lowest possible number in JavaScript.</li>
+                    <li>POSITIVE_INFINITY is returned on overflow.</li>
+                    <li>NEGATIVE_INFINITY is returned on overflow.</li>
+                </ul>
+            </div>
+
+            <div id='subTopics'>
+                <h3>String Methods and Strings Primitive values, like "John Doe", cannot have properties or methods (because they are not objects). But with JavaScript, methods and properties are also available to primitive values, because JavaScript treats
+                    primitive values as objects when executing methods and properties.</h3>
+            </div>
+            <ul>
+                <li>JavaScript String Length The length property returns the length of a string: .length</li>
+                <li>Extracting String Parts There are 3 methods for extracting a part of a string:
+                    <ul>
+                        <li>slice(start, end) - slice() extracts a part of a string and returns the extracted part in a new string. The method takes 2 parameters: the start position, and the end position (end not included).</li>
+                        <li>substring(start, end) - substring() is similar to slice(). The difference is that start and end values less than 0 are treated as 0 in substring()</li>
+                        <li>substr(start, length) - substr() is similar to slice(). The difference is that the second parameter specifies the length of the extracted part. </li>
+                        <li>The replace() method replaces a specified value with another value in a string -- By default, the replace() method replaces only the first match. The replace() method does not change the string it is called on. The replace() method
+                            returns a new string. The replace() method replaces only the first match If you want to replace all matches, use a regular expression with the /g flag set. See examples below. To replace case insensitive, use a regular expression
+                            with an /i flag (insensitive): To replace all matches, use a regular expression with a /g flag (global match):</li>
+
+                    </ul>
+                </li>
+                <li>Converting to Upper and Lower Case A string is converted to upper case with toUpperCase(): A string is converted to lower case with toLowerCase():</li>
+                <li>JavaScript String concat() .concat() joins two or more strings:</li>
+                <li>All string methods return a new string. They don't modify the original string. Formally said: Strings are immutable: Strings cannot be changed, only replaced.</li>
+                <li>JavaScript String trim() The trim() method removes whitespace from both sides of a string:</li>
+                <li>JavaScript String Padding ECMAScript 2017 added two String methods: padStart() and padEnd() to support padding at the beginning and at the end of a string.
+                    <ul>
+                        <li>The padStart() method pads a string with another string: The padStart() method is a string method. To pad a number, convert the number to a string first. See the example below.</li>
+                        <li>The padEnd() method pads a string with another string: The padEnd() method is a string method. To pad a number, convert the number to a string first. See the example below.</li>
+                    </ul>
+                </li>
+                <li>JavaScript String charAt() The charAt() method returns the character at a specified index (position) in a string:</li>
+                <li>The charAt() method returns the character at a specified index (position) in a string:</li>
+                <li>The charCodeAt() method returns the unicode of the character at a specified index in a string: The method returns a UTF-16 code (an integer between 0 and 65535).</li>
+                <li>Property Access ECMAScript 5 (2009) allows property access [ ] on strings: text[0] ; Property access might be a little unpredictable: It makes strings look like arrays (but they are not) If no character is found, [ ] returns undefined,
+                    while charAt() returns an empty string. It is read only. str[0] = "A" gives no error (but does not work!)</li>
+                <li>JavaScript String split() A string can be converted to an array with the split() method: <code>text.split(",")    // Split on commas
+                    text.split(" ")    // Split on spaces
+                    text.split("|")    // Split on pipe</code> If the separator is omitted, the returned array will contain the whole string in index [0]. If the separator is "", the returned array will be an array of single characters:</li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div id='day'>
+        <h1 id='day-title'>Day 2</h1>
+        <div id='topic-box'>
+            <h2 id=t opic-title>Basics Part 2</h2>
+            <ol id='keyTopics'>
+                <li>Conditionals</li>
+                <li>Loops</li>
+                <li>Array/Array Methods</li>
+                <li>Scope</li>
+                <li>Switch</li>
+                <li>Math</li>
+            </ol>
+        </div>
+    </div>
+
+    <div id='day'>
+        <h1 id='day-title'>Day 3</h1>
+        <div id='topic-box'>
+            <h2 id=t opic-title>Intermediate Topics</h2>
+            <ol id='keyTopics'>
+                <li>Classes/Objects</li>
+                <li>Arrow Functions</li>
+                <li>Dom</li>
+            </ol>
+        </div>
+    </div>
+
+    <div id='day'>
+        <h1 id='day-title'>Day 4</h1>
+        <div id='topic-box'>
+            <h2 id=t opic-title>Project Day</h2>
+            <ol id='keyTopics'>
+                <li>Calculator App</li>
+                <li>Calendar App</li>
+                <li>Notes App</li>
+                <li>Todo List App</li>
+            </ol>
+        </div>
+    </div>
+
+    <div id='day'>
+        <h1 id='day-title'>Day 5</h1>
+        <div id='topic-box'>
+            <h2 id=t opic-title>Advance Topics</h2>
+            <ol id='keyTopics'>
+                <li>DOM</li>
+                <li>Async/Await</li>
+                <li>Promises</li>
+                <li>Callbacks</li>
+            </ol>
+        </div>
+    </div>
+
+    <div id='day'>
+        <h1 id='day-title'>Day 6</h1>
+        <div id='topic-box'>
+            <h2 id=t opic-title>Data Structures & Algorithms</h2>
+            <ol id='keyTopics'>
+                <li>Stacks</li>
+                <li>Trees</li>
+                <li>Binary Search</li>
+                <li>DFS</li>
+                <li>BFS</li>
+            </ol>
+        </div>
+    </div>
+
+    <div id='day'>
+        <h1 id='day-title'>Day 7</h1>
+        <div id='topic-box'>
+            <h2 id=t opic-title>Problem Solving</h2>
+            <ol id='keyTopics'>
+                <li>Array Problems</li>
+                <li>loop Problems</li>
+                <li>sort Problems</li>
+                <li>random generator Problems</li>
+            </ol>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="" async defer></script>
+</body>
+
+</html>

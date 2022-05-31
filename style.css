@@ -1,0 +1,9 @@
+#day {
+    background-color: cornsilk;
+    outline: solid black 2px;
+    width: 85%;
+    height: 400px;
+    overflow-y: auto;
+    margin: auto;
+    margin-bottom: 20px;
+}
