@@ -222,9 +222,176 @@
                 <li>Loops</li>
                 <li>Array/Array Methods</li>
                 <li>Scope</li>
-                <li>Switch</li>
                 <li>Math</li>
             </ol>
+            <div id='subTopics'>
+                <h3>conditional statements are used Very often when you write code, you want to perform different actions for different decisions. You can use conditional statements in your code to do this. In JavaScript we have the following conditional
+                    statements:
+                </h3>
+                <ul>
+                    <li>Use if to specify a block of code to be executed, if a specified condition is true <code>if (condition) {
+                        //  block of code to be executed if the condition is true
+                      }</code></li>
+                    <li>Use else to specify a block of code to be executed, if the same condition is false <code>if (condition) {
+                        //  block of code to be executed if the condition is true
+                      } else {
+                        //  block of code to be executed if the condition is false
+                      }</code></li>
+                    <li>Use else if to specify a new condition to test, if the first condition is false <code>if (condition1) {
+                        //  block of code to be executed if condition1 is true
+                      } else if (condition2) {
+                        //  block of code to be executed if the condition1 is false and condition2 is true
+                      } else {
+                        //  block of code to be executed if the condition1 is false and condition2 is false
+                      }</code></li>
+                    <li>Use switch to specify many alternative blocks of code to be executed // The switch expression is evaluated once. The value of the expression is compared with the values of each case. If there is a match, the associated block of code
+                        is executed. If there is no match, the default code block is executed.When JavaScript reaches a break keyword, it breaks out of the switch block. This will stop the execution inside the switch block. It is not necessary to break
+                        the last case in a switch block. The block breaks (ends) there anyway. Note: If you omit the break statement, the next case will be executed even if the evaluation does not match the case. The default Keyword The default keyword
+                        specifies the code to run if there is no case match: Switching Details If multiple cases matches a case value, the first case is selected. If no matching cases are found, the program continues to the default label. If no default
+                        label is found, the program continues to the statement(s) after the switch. Strict Comparison Switch cases use strict comparison (===). The values must be of the same type to match. A strict comparison can only be true if the operands
+                        are of the same type. In this example there will be no match for x.<code>switch(expression) {
+                        case x:
+                          // code block
+                          break;
+                        case y:
+                          // code block
+                          break;
+                        default:
+                          // code block
+                      }</code></li>
+                </ul>
+
+                <div id='subTopics'>
+                    <h3>JavaScript Loops Loops are handy, if you want to run the same code over and over again, each time with a different value. Often this is the case when working with arrays:</h3>
+                    <ul>Different Kinds of Loops JavaScript supports different kinds of loops:
+
+                        <li> for - loops through a block of code a number of times<code>for (statement 1; statement 2; statement 3) {
+                            // code block to be executed
+                          }</code> Statement 1 is executed (one time) before the execution of the code block. Statement 2 defines the condition for executing the code block. Statement 3 is executed (every time) after the code block has been executed.
+                            Statement 1 Normally you will use statement 1 to initialize the variable used in the loop (let i = 0). This is not always the case, JavaScript doesn't care. Statement 1 is optional. You can initiate many values in statement
+                            1 (separated by comma): And you can omit statement 1 (like when your values are set before the loop starts): <code>let i = 2;
+                            let len = cars.length;
+                            let text = "";
+                            for (; i < len; i++) {
+                              text += cars[i] + "<br>";
+                            }</code>Statement 2 Often statement 2 is used to evaluate the condition of the initial variable. This is not always the case, JavaScript doesn't care. Statement 2 is also optional. If statement 2 returns true, the loop will
+                            start over again, if it returns false, the loop will end. If you omit statement 2, you must provide a break inside the loop. Otherwise the loop will never end. This will crash your browser. Read about breaks in a later chapter
+                            of this tutorial. Statement 3 Often statement 3 increments the value of the initial variable. This is not always the case, JavaScript doesn't care, and statement 3 is optional. Statement 3 can do anything like negative increment
+                            (i--), positive increment (i = i + 15), or anything else. Statement 3 can also be omitted (like when you increment your values inside the loop).
+                            <code>let i = 0;
+                            let len = cars.length;
+                            let text = "";
+                            for (; i < len; ) {
+                              text += cars[i] + "<br>";
+                              i++;
+                            }</code> In the first example, using var, the variable declared in the loop redeclares the variable outside the loop. In the second example, using let, the variable declared in the loop does not
+                            redeclare the variable outside the loop. When let is used to declare the i variable in a loop, the i variable will only be visible within the loop.</li>
+                        <li>for/in - loops through the properties of an object The For In Loop The JavaScript for in statement loops through the properties of an Object: <code>const person = {fname:"John", lname:"Doe", age:25};
+
+                            let text = "";
+                            for (let x in person) {
+                              text += person[x];
+                            }</code>The for in loop iterates over a person object Each iteration returns a key (x) The key is used to access the value of the key The value of the key is person[x] The JavaScript for in statement can also loop over the
+                            properties of an Array: <code>const numbers = [45, 4, 9, 16, 25];
+
+                                let txt = "";
+                                for (let x in numbers) {
+                                  txt += numbers[x];
+                                }</code> Do not use for in over an Array if the index order is important. The index order is implementation-dependent, and array values may not be accessed in the order you expect. Array.forEach() The forEach() method calls
+                            a function (a callback function) once for each array element. <code>const numbers = [45, 4, 9, 16, 25];
+
+                                    let txt = "";
+                                    numbers.forEach(myFunction);
+                                    
+                                    function myFunction(value, index, array) {
+                                      txt += value;
+                                    }</code> Note that the function takes 3 arguments: The item value The item index The array itself</li>
+                        <li>for/of - loops through the values of an iterable object The JavaScript for of statement loops through the values of an iterable object. It lets you loop over iterable data structures such as Arrays, Strings, Maps, NodeLists, and
+                            more: <code>for (variable of iterable) {
+                                // code block to be executed
+                              }</code> variable - For every iteration the value of the next property is assigned to the variable. Variable can be declared with const, let, or var. iterable - An object that has iterable properties. </li>
+                        <li>while - loops through a block of code while a specified condition is true The while loop loops through a block of code as long as a specified condition is true. <code>while (condition) {
+                            // code block to be executed
+                          }</code> In the following example, the code in the loop will run, over and over again, as long as a variable (i) is less than 10: <code>Example
+                            while (i < 10) {
+                              text += "The number is " + i;
+                              i++;
+                            }</code></li>
+                        <li>do/while - also loops through a block of code while a specified condition is true. The Do While Loop The do while loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition
+                            is true, then it will repeat the loop as long as the condition is true. <code>do {
+                                // code block to be executed
+                              }
+                              while (condition);</code> The example below uses a do while loop. The loop will always be executed at least once, even if the condition is false, because the code block is executed before the condition is tested. Comparing
+                            For and While If you have read the previous chapter, about the for loop, you will discover that a while loop is much the same as a for loop, with statement 1 and statement 3 omitted. The loop in this example uses a for loop
+                            to collect the car names from the cars array:</li>
+                    </ul>
+
+                </div>
+
+                <div id='subTopics'>
+                    <h3>Scope determines the accessibility (visibility) of variables. JavaScript has 3 types of scope: Block scope Function scope Global scope</h3>
+
+                    <ul>
+                        <li>Block Scope Before ES6 (2015), JavaScript had only Global Scope and Function Scope. ES6 introduced two important new JavaScript keywords: let and const. These two keywords provide Block Scope in JavaScript. Variables declared inside
+                            a { } block cannot be accessed from outside the block:</li>
+                        <li>Local Scope Variables declared within a JavaScript function, become LOCAL to the function. Local variables have Function Scope: They can only be accessed from within the function. Since local variables are only recognized inside
+                            their functions, variables with the same name can be used in different functions. Local variables are created when a function starts, and deleted when the function is completed.</li>
+                        <li>Function Scope JavaScript has function scope: Each function creates a new scope. Variables defined inside a function are not accessible (visible) from outside the function. Variables declared with var, let and const are quite similar
+                            when declared inside a function. They all have Function Scope:</li>
+                        <li>Global JavaScript Variables A variable declared outside a function, becomes GLOBAL. A global variable has Global Scope: All scripts and functions on a web page can access it. Global Scope Variables declared Globally (outside any
+                            function) have Global Scope. Global variables can be accessed from anywhere in a JavaScript program. Variables declared with var, let and const are quite similar when declared outside a block. They all have Global Scope: Do
+                            NOT create global variables unless you intend to. Your global variables (or functions) can overwrite window variables (or functions). Any function, including the window object, can overwrite your global variables and functions.</li>
+                    </ul>
+
+                </div>
+
+                <div id='subTopics'>
+                    <h3>The Math Object Unlike other objects, the Math object has no constructor. The Math object is static. All methods and properties can be used without creating a Math object first. The JavaScript Math object allows you to perform mathematical
+                        tasks on numbers.</h3>
+
+                    <ul>The Math Object Unlike other objects, the Math object has no constructor. The Math object is static. All methods and properties can be used without creating a Math object first.
+                        <ul>
+                            <li>Math.E // returns Euler's number</li>
+                            <li>Math.PI // returns PI</li>
+                            <li>Math.SQRT2 // returns the square root of 2</li>
+                            <li>Math.SQRT1_2 // returns the square root of 1/2</li>
+                            <li>Math.LN2 // returns the natural logarithm of 2</li>
+                            <li>Math.LN10 // returns the natural logarithm of 10</li>
+                            <li>Math.LOG2E // returns base 2 logarithm of E</li>
+                            <li>Math.LOG10E // returns base 10 logarithm of E</li>
+
+                            <li> abs(x) Returns the absolute value of x </li>
+                            <li>acos(x) Returns the arccosine of x, in radians</li>
+                            <li> acosh(x) Returns the hyperbolic arccosine of x</li>
+                            <li>asin(x) Returns the arcsine of x, in radians</li>
+                            <li>asinh(x) Returns the hyperbolic arcsine of x</li>
+                            <li>atan(x) Returns the arctangent of x as a numeric value between -PI/2 and PI/2 radians</li>
+                            <li>atan2(y, x) Returns the arctangent of the quotient of its arguments</li>
+                            <li>atanh(x) Returns the hyperbolic arctangent of x</li>
+                            <li>cbrt(x) Returns the cubic root of x</li>
+                            <li>ceil(x) Returns x, rounded upwards to the nearest integer</li>
+                            <li>cos(x) Returns the cosine of x (x is in radians)</li>
+                            <li>cosh(x) Returns the hyperbolic cosine of x</li>
+                            <li>exp(x) Returns the value of Ex</li>
+                            <li>floor(x) Returns x, rounded downwards to the nearest integer</li>
+                            <li>log(x) Returns the natural logarithm (base E) of x</li>
+                            <li>max(x, y, z, ..., n) Returns the number with the highest value</li>
+                            <li>min(x, y, z, ..., n) Returns the number with the lowest value</li>
+                            <li>pow(x, y) Returns the value of x to the power of y</li>
+                            <li>random() Returns a random number between 0 and 1</li>
+                            <li>round(x) Rounds x to the nearest integer</li>
+                            <li>sign(x) Returns if x is negative, null or positive (-1, 0, 1)</li>
+                            <li>sin(x) Returns the sine of x (x is in radians)</li>
+                            <li>sinh(x) Returns the hyperbolic sine of x</li>
+                            <li>sqrt(x) Returns the square root of x</li>
+                            <li>tan(x) Returns the tangent of an angle</li>
+                            <li>tanh(x) Returns the hyperbolic tangent of a number</li>
+                            <li>trunc(x) Returns the integer part of a number (x)</li>
+                        </ul>
+                    </ul>
+
+                </div>
+            </div>
         </div>
     </div>
 
@@ -237,6 +404,7 @@
                 <li>Arrow Functions</li>
                 <li>Dom</li>
             </ol>
+
         </div>
     </div>
 
